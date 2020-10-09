@@ -1,0 +1,289 @@
+//---- header start ----//
+.header{
+    height: 100vh;
+    // background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url('/assets/img/banner2.jpg');
+    border-bottom: 1px solid #000000;
+    >img{
+        position: absolute;
+        z-index: -99999;
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+    }
+    .nav{
+        display: flex;
+        justify-content:space-between;
+        padding: 0 7% 0 7%;
+         .logo{
+             margin:10px 0 0 0;
+             width: 15%;
+             min-width: 220px;
+             img{
+                 width: 100%;
+             }
+         }
+         .top-menu{
+             width: 85%;
+             line-height: 5;
+             @media screen and (min-width: 1280px){
+                 line-height: 5.5;
+             }
+             @media screen and (min-width: 1980px){
+                line-height: 6;
+            }
+         }
+         .menu{
+             display: flex;
+             justify-content:flex-end;
+             li{
+                 margin-right: 5%;
+                 padding-bottom: 0px;                                  
+                 a{
+                    padding: 5px;
+                    font-size: 24px;
+                    color: #ffffff;
+                    font-family: 標楷體;
+                    cursor: pointer;
+                    letter-spacing: 3px;
+                    transition: .3s;     
+                    &:after{
+                        content: '';
+                            display: block;
+                            top: 0;
+                            width: 0;
+                            height: 2px;
+                            background: #ffffff;
+                            transition: .5s;
+                    }
+                     &:hover{
+                         line-height: 3.5;
+                    }
+                    &:hover:after{
+                        width: 100%;
+                    }
+                 }
+
+             }
+         }
+    }
+}
+
+//---- header end ----//
+
+//---- content ----//
+.content{
+    position: relative;
+    .content-1-bg{
+        width: 100%;
+        background-image: url('/assets/img/banner3.jpg');
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        border-bottom: 1px solid #000000;
+        opacity: 0.3;
+
+        @media screen and (min-width: 1281px){
+            height: 750px;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1280px){
+            height: 700px;
+        }
+        @media screen and (max-width: 1023px){
+            height: 600px;
+       }
+    }
+    .content-1{
+        width: 100%;
+        position: absolute;
+        top: 0;       
+        .news{
+            margin-top: 25px;
+            width: 100%;
+            //padding: 20px 7% 20px 7%;
+            .news-items{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                .item{
+                    padding: 1%;
+                    @media screen and (max-width:1024px){
+                        width: 40%;
+                    }
+                    @media screen and (min-width:1025px){
+                        width: 20%;
+                    }
+                    @media screen and (max-width:500px){
+                        width: 80%;
+                    }
+                    .item-img{
+                        text-align: center;
+                        width: 100%;
+                        img{
+                            border-radius: 50%;
+                            width: 100%;
+                            max-width: 350px;
+                        }
+                    }
+                    .item-content{
+                        @media screen and (min-width: 1024px){
+                            width: 60%;
+                        }
+                        @media screen and (max-width: 1023px){
+                            width: 100%;
+                        }
+                        text-align: center;
+                        margin: 15px auto;
+                        color: #ffffff;
+                        text-shadow: 1px 1px 2px black;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-2-bg{
+        @media screen and (min-width: 1280px){
+            height: 700px;
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1279px){
+            height: 650px;
+        }
+        @media screen and (max-width: 1024px){
+            height: 1200px;
+        }
+        @media screen and (max-width: 990px){
+        height: 1100px;
+        }     
+        @media screen and (max-width: 800px){
+            height: 1000px;
+        }    
+            background-image: url('/assets/img/bg.jpg');
+            border-bottom: 1px solid #000000;
+    }
+    .content-2{
+        width: 100%;
+        top: 0;
+        position: absolute;
+        .news{
+            margin-top: 25px;
+            width: 100%;
+            .news-items{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+               flex-wrap: wrap;
+                .item{                   
+                    padding: 0.5%;
+                    @media screen and (max-width:1024px){
+                        width: 40%;
+                    }
+                    @media screen and (min-width:1025px){
+                        width: 20%;
+                    }
+                    @media screen and (max-width:500px){
+                        width: 80%;
+                    }
+                    .item-img{
+                        text-align: center;
+                        img{
+                            width: 100%;
+                            max-width: 350px;
+                        }
+                        iframe{
+                            width: 100%;                                             
+                        }
+                    }
+                    .item-content{
+                        @media screen and (min-width: 1024px){
+                            width: 60%;
+                        }
+                        @media screen and (max-width: 1023px){
+                            width: 100%;
+                        }
+                        text-align: center;
+                        margin: 15px auto;
+                        color: #ffffff;
+                        text-shadow: 1px 1px 2px black;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-3-bg{
+        @media screen and (min-width: 1280px){
+            height: 810px;
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1279px){
+            height: 800px;
+        }
+        @media screen and (max-width: 1024px){
+            height: 1200px;
+        }
+        @media screen and (max-width: 990px){
+        height: 1120px;
+        }     
+        @media screen and (max-width: 800px){
+            height: 1200px;
+        }    
+        @media screen and (max-width: 700px){
+            height: 1300px;
+        }    
+        background-image: url('/assets/img/bg.jpg');
+        border-bottom: 1px solid #000000;
+    }
+}
+//---- content end ----//
+
+//---- footer start----//
+.footer{
+    background-color: #D9D9D9;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .footer-item{
+        width: 30%;
+    }
+    .logo{
+        width: 220px;
+    }
+    .info{
+        .info-item{
+            margin-top: 5px;
+        }
+    }
+}
+//---- footer end ----//
+
+
+//---- other ----//
+.no-display{
+    display: none;
+}
+
+.mg20{
+    margin: 20px;
+}
+
+.mg40{
+    margin: 40px;
+}
+
+h1{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    font-family: 標楷體;
+}
+
+.border-radius5{
+    border-radius: 5px;
+}
